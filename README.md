@@ -63,22 +63,18 @@ Either should start the server and give you a list of local URLs you can access 
 
 For more on running eleventy, locally, take a look at [Getting started with Eleventy](https://www.11ty.dev/docs/getting-started/).
 
-### Testing
+## What's in the tin
 
-#### With locally installed `node` and `ruby`
-    $ npm test
-    OR
-    $ bundle exec htmlproofer _site; npx a11y '_site/**/*.html'
+Here's what you'll find as you're developing:
 
-#### With Docker
-    $ docker-compose run ruby bundle exec htmlproofer _site; npx a11y '_site/**/*.html'
-
-## Technologies you should be familiarize yourself with
-
-- [Jekyll](https://jekyllrb.com/docs/) - The primary site engine that builds your code and content.
-- [Front Matter](https://jekyllrb.com/docs/frontmatter) - The top of each page/post includes keywords within `--` tags. This is meta data that helps Jekyll build the site, but you can also use it to pass custom variables.
-- [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) 
-
+* `/_site`: When your site is built, this is where the output files go. You probably won't need to touch this.
+* `/_src`: The source files. For your site. This is where you'll work.
+* `/_src/includes`: Various partials and includes, including some sample USWDS components you can copy about as you see fit.
+* `/_src/layouts`: Base layouts for different types of pages.
+* `/css`: Any non-USWDS CSS you have can go here.
+* `/css`: Any non-USWDS CSS you have can go here.
+* `/uswds-2.10.1`: The USWDS source files. We don't recommend editing them directly.
+* `index.njk`: A sample index page.
 
 ## Contributing
 
